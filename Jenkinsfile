@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Stage 1') {
+    stage('Git Checkout') {
       steps {
-        echo 'Hello'
+        echo 'Checkout from GitHub'
         git(url: 'https://github.com/marco-sanjuan/kubernetes-sandbox/', branch: 'master')
       }
     }
